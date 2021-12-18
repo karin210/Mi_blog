@@ -12,12 +12,12 @@
 	display: flex;
 }
 .left-box {
-	background-color: blue;
+	background-color: darkblue;
 	color: white;
 	padding: 1em;
 }
 .right-box {
-	background-color: gray;
+	background-color: darkblue;
 	flex: 1;
 	padding: 1em;
 }
@@ -31,4 +31,23 @@
 }
 html, body {
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+.reset {
+	padding: 0;
+	margin: 0;
+}
+
+.style-h1 {
+	font-size: xx-large;
+	font-weight: 700;
+	text-align: center;
+	background-color:blue;
+}
+.style-h2 {
+	color: white;
+}
+.footformat {
+	background-color: darkblue;
+	font-size: large;
 }
