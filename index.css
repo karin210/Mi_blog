@@ -1,72 +1,49 @@
-.center-items {
+body {
 	display: flex;
-	align-items: center;
-	height: 100%;
-	justify-content: center;
-	gap: 150px;
-	}
-.bigger-text {
-	font-size: xx-large;
-}
-.top-nav {
-	display: flex;
-}
-.left-box {
-	background-color: darkblue;
-	color: white;
-	padding: 1em;
-}
-.right-box {
-	background-color: darkblue;
-	flex: 1;
-	padding: 1em;
-}
-.top-nav a {
-	color: inherit;
-}
-.top-image {
-	background-image: url(http://jmd.im/wp-content/uploads/2017/06/blackiii_thumbnail.jpg);
-	color: white;
-	min-height: 100%;
-}
-html, body {
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-}
-.reset {
-	padding: 0;
+	flex-flow: column wrap;
+	height: 105vh;
 	margin: 0;
+	background-image: url('photoback.jpg');
+	background-size: cover;
 }
 
-.style-h1 {
-	font-size: xx-large;
-	font-weight: 700;
-	text-align: center;
-	background-color:blue;
-
-}
-.style-art {
-	display: block;
-	width: 400px;
-	height: 100px;
-	color: white;
-	background-color: gray;
-	text-align: center;
-	
-}
-.footformat {
-	background-color: darkblue;
-	font-size: large;
-	height: 100px;
-	
-}
-.homefoo {
-	color: white;
-
-}
-.socials {
+#main {
 	display: flex;
-	width: 50px;
-	height: 50px;
-	xjustify-items: center;
+	height: 100vh;
+}
+#img {
+	width: 100%;
+	height: 100%;
+	background-size: 100% 118%;
+
+}
+
+#nav {
+	
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+
+}
+
+.links {
+	color: white;
+	font-size: 27px;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px;
+	border-radius: 6px;
+}
+
+.fa-brands {
+	font-size: 45px;
+	margin-right: 35px;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	height: 59px;
+	align-content: center;
 }
