@@ -1,38 +1,38 @@
-body {
+.base {
 	display: flex;
 	flex-flow: column wrap;
-	height: 105vh;
+	height: 100%;
 	margin: 0;
 	background-image: url('photoback.jpg');
 	background-size: cover;
 }
 
-#main {
+.main {
 	display: flex;
 	height: 100vh;
-}
-#img {
-	width: 100%;
-	height: 100%;
-	background-size: 100% 118%;
-
+	width: 100vw;
+	justify-content: end;
 }
 
-#nav {
-	
+#main_nav {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-evenly;
-
+	height: 100vh;
 }
 
-.links {
+.nav_a {
 	color: white;
 	font-size: 27px;
 	text-align: center;
 	text-decoration: none;
 	padding: 14px;
 	border-radius: 6px;
+	padding-right: 55px;
+}
+
+.nav_a:hover {
+	background-color: black;
 }
 
 .fa-brands {
@@ -48,134 +48,112 @@ body {
 	align-content: center;
 }
 
-/*Gallery*/
+/*Pages*/
 
-.grid {
-	display: grid;
-	grid-template-rows: repeat(7, 1fr);
-    grid-template-columns: repeat(12, 1fr);
-
-}
-
-#h1box {
+.pages_header {
+	display: flex;
 	position: sticky;
-	left: 9%;
-	background-color: ghostwhite;
-	width: 94%;
-	font-size: 2rem;
-	text-align: center;
-	height: 146px;
-	margin-bottom: 79px;
+	background-color: black;
+	justify-content: space-around;
+
 }
 
+.pages_h1 {
+	color: ghostwhite;
 
+}
 
-#img1 {
-	width: 470px;
-    height: 354px;
+.pages_nav {
+	align-self: center;
+
+}
+
+.pages_nav_a {
+	text-decoration: none;
+	padding: 14px;
+	border-radius: 6px;
+	color: ghostwhite;
+	font-size: 27px;
+}
+
+.pages_main {
+	 display: flex;
+	 height: 1085px;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.pages_main_picts {
+	width: 31%;
+    height: 46%;
 	border-radius: 9px;
 	border: 5px solid;
-	grid-area: 2/ 1;
-    margin-left: 50px;
-	
+	position: relative;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-right: -1%;
+}
+
+figure:nth-of-type(1) {
+		background-image: url('brightDay.jpg');
 
 }
 
-#pImg1 {
-	display: none;
-	background-color: rgba(248, 249, 250, 79%);
-	height: 358px;
-	width: 474px;
-	border: 3px solid white;
-	border-radius: 9px;
-	grid-area: 2/ 1;
-    margin-left: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
+figure:nth-of-type(2) {
+		background-image: url('xpicy.jpg');
+
+}
+
+figure:nth-of-type(3) {
+		background-image: url('gdlpark.jpg');
+
+}
+
+figure:nth-of-type(4) {
+		background-image: url('acuario.jpg');
+
+}
+
+figure:nth-of-type(5) {
+		background-image: url('el_lago_con_el_may.jpg');
+		background-size: 115%;
+
+}
+
+figure:nth-of-type(6) {
+		background-image: url('finca_ver.jpg');
 
 }
 
 
-#img2 {
-	width: 470px;
-    height: 354px;
-	border-radius: 9px;
-	border: 5px solid;
-	margin-left: 50px;
-	grid-area: 2/ 2;
-}
-
-#pImg2 {
-	display: none;
-	background-color: rgba(248, 249, 250, 79%);
-	height: 358px;
-	width: 474px;
-	border: 3px solid white;
-	border-radius: 9px;
-	grid-area: 2/ 2;
-    margin-left: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
-}
-
-
-#img3 {
+.picts_txt {
+	display: block;
+	background: transparent;
+	color: transparent;
+	height: 100%;
 	width: 100%;
-	width: 470px;
-    height: 354px;
+	border: 5px solid white;
 	border-radius: 9px;
-	border: 5px solid;
-	margin-left: 50px;
-	grid-area: 2/ 3;
-}
-
-#pImg3 {
-	display: none;
-	background-color: rgba(248, 249, 250, 79%);
-	height: 358px;
-	width: 474px;
-	border: 3px solid white;
-	border-radius: 9px;
-	grid-area: 2/ 3;
-    margin-left: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
     font-size: 30px;
+    position: relative;
+	top: -35px;
+    left: -5px;
 }
 
-#img4 {
-	width: 100%;
-	width: 470px;
-    height: 354px;
-	border-radius: 9px;
-	border: 5px solid;
-	margin-left: 50px;
-	grid-area: 2/ 4;
-
-}
-
-#pImg4 {
-	display: none;
+.picts_txt:hover {
 	background-color: rgba(248, 249, 250, 79%);
-	height: 358px;
-	width: 474px;
-	border: 3px solid white;
-	border-radius: 9px;
-	grid-area: 2/ 4;
-    margin-left: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
+	color: black;
+
 }
 
 #footerGal {
-    grid-area: 13/ 1/ 13/ 13;
     display: flex;
 	justify-content: center;
 	background-color: black;
 	height: 59px;
-	align-content: center;
 }
 
+#navGallery {
+
+}
