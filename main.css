@@ -215,10 +215,11 @@ figure:nth-of-type(6) {
  top: 80px;
  left: 0;
  z-index: -1;
+ overflow: scroll;
 }
 
 #story1_p {
- height: 106%;
+ height: 116%;
 
 }
 
