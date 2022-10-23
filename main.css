@@ -53,6 +53,8 @@
 .pages_header {
 	display: flex;
 	position: sticky;
+	top: 0;
+	z-index: 2;
 	background-color: black;
 	justify-content: space-around;
 
@@ -154,6 +156,30 @@ figure:nth-of-type(6) {
 	height: 59px;
 }
 
-#navGallery {
+/*Philosophy*/
 
+.phil_p_h {
+	font-size: 6rem;
+    background-color: black;
+    color: ghostwhite;
+    padding: 29px;
+    width: 500px;
+    height: 450px;
+    border-radius: 9px;
+    margin-right: 75px;
 }
+
+.phil_p-modal {
+ display: none;
+ font-size: 40px;
+ background-color: rgba(30, 58, 94, 97%);
+ color: ghostwhite;
+ position: absolute;
+ width: 100%;
+ height: 97%;
+ margin: 0;
+ top: 80px;
+ left: 0;
+ z-index: -1;
+}
+
