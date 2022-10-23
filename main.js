@@ -42,7 +42,7 @@ const storyModal1 = document.querySelector('#story1_p');
 const story2 = document.querySelector('#story2');
 const storyModal2 = document.querySelector('#story2_p');
 main.addEventListener('click', function(e) {
-		if(e.target.id.includes('story1_h')) {
+		if(e.target.id.includes('story1')) {
 			storyModal1.style.display= 'block';
 			storyModal1.style.zIndex= '1';
 		}

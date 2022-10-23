@@ -158,15 +158,19 @@ figure:nth-of-type(6) {
 
 /*Philosophy*/
 
-.phil_p_h {
-	font-size: 6rem;
-    background-color: black;
-    color: ghostwhite;
-    padding: 29px;
-    width: 500px;
-    height: 450px;
+.main_ideas {
+	background-color: black;
+	padding: 29px;
+    width: 450px;
+    height: 240px;
     border-radius: 9px;
     margin-right: 75px;
+}
+
+.phil_h {
+	font-size: 4rem;
+    color: ghostwhite;
+    margin: 0;
 }
 
 .phil_p-modal {
@@ -184,15 +188,19 @@ figure:nth-of-type(6) {
 }
 
 /*Stories*/
-.story_p_h {
-font-size: 6rem;
-background-color: black;
-color: ghostwhite;
-padding: 29px;
-width: 500px;
-height: 450px;
-border-radius: 9px;
-margin-right: 75px;
+.main_stories {
+	background-color: black;
+	padding: 29px;
+    width: 450px;
+    height: 240px;
+    border-radius: 9px;
+    margin-right: 75px;
+}
+
+.story_h {
+	font-size: 4rem;
+    color: ghostwhite;
+    margin: 0;
 }
 
 .story_p-modal {
@@ -212,4 +220,21 @@ margin-right: 75px;
 #story1_p {
  height: 106%;
 
+}
+
+/*Articles*/
+
+.main_articles {
+	background-color: black;
+	padding: 29px;
+    width: 450px;
+    height: 240px;
+    border-radius: 9px;
+    margin-right: 75px;
+}
+
+.article_p_h {
+	font-size: 4rem;
+    color: ghostwhite;
+    margin: 0;
 }
