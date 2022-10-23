@@ -1,10 +1,11 @@
-let main = document.querySelector('.pages_main');
-let idea1 = document.querySelector('#idea1');
-let modal1 = document.querySelector('#idea1_p');
-let idea2 = document.querySelector('#idea2');
-let modal2 = document.querySelector('#idea2_p');
-let idea3 = document.querySelector('#idea3');
-let modal3 = document.querySelector('#idea3_p');
+//Philosophy page
+const main = document.querySelector('.pages_main');
+const idea1 = document.querySelector('#idea1');
+const modal1 = document.querySelector('#idea1_p');
+const idea2 = document.querySelector('#idea2');
+const modal2 = document.querySelector('#idea2_p');
+const idea3 = document.querySelector('#idea3');
+const modal3 = document.querySelector('#idea3_p');
 
 
 
@@ -35,5 +36,29 @@ main.addEventListener('click', function(e) {
 	}
 })
 
+//Stories page
+const story1 = document.querySelector('#story1');
+const storyModal1 = document.querySelector('#story1_p');
+const story2 = document.querySelector('#story2');
+const storyModal2 = document.querySelector('#story2_p');
+main.addEventListener('click', function(e) {
+		if(e.target.id.includes('story1_h')) {
+			storyModal1.style.display= 'block';
+			storyModal1.style.zIndex= '1';
+		}
+		else if(e.target.id.includes('story2')) {
+			storyModal2.style.display= 'block';
+			storyModal2.style.zIndex= '1';
+		}
+	
+})
 
+main.addEventListener('click', function(e) {
+	if(e.target.id.includes('story1_p')) {
+		storyModal1.style.display= 'none';
+	}
+	else if(e.target.id.includes('story2_p')) {
+		storyModal2.style.display= 'none';
+	}
+})
 
