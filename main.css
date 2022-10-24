@@ -291,15 +291,39 @@ figure:nth-of-type(6) {
 }
 
 .pages_main_picts {
+	background-size: 105%;
 	margin-right: 0;
 	margin-left: 0;
 	width: 73%;
-	height: 311px;
+	height: 244px;
 
 }
 
 .picts_txt {
 	height: 100%;
+}
+
+
+
+
+figure:nth-of-type(4) {
+		background-image: url('acuario.jpg');
+		bottom: 0;
+
+}
+
+figure:nth-of-type(5) {
+		background-image: url('el_lago_con_el_may.jpg');
+		bottom: 0;
+		background-size: 123% 100%;
+
+
+}
+
+figure:nth-of-type(6) {
+		background-image: url('finca_ver.jpg');
+		bottom: 0;
+
 }
 
 }
