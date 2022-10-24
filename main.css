@@ -4,7 +4,7 @@
 	height: 100%;
 	margin: 0;
 	background-image: url('photoback.jpg');
-	background-size: cover;
+	background-size: 100% 96%;
 }
 
 .main {
@@ -48,7 +48,7 @@
 	align-content: center;
 }
 
-/*Pages*/
+/*Gallery*/
 
 .pages_header {
 	display: flex;
@@ -87,14 +87,17 @@
 }
 
 .pages_main_picts {
-	width: 31%;
-    height: 46%;
+	width: 29%;
+    height: 33%;
 	border-radius: 9px;
 	border: 5px solid;
 	position: relative;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	margin-right: -1%;
+}
+
+#pict5 {
 }
 
 figure:nth-of-type(1) {
@@ -114,17 +117,21 @@ figure:nth-of-type(3) {
 
 figure:nth-of-type(4) {
 		background-image: url('acuario.jpg');
+		bottom: 130px;
 
 }
 
 figure:nth-of-type(5) {
 		background-image: url('el_lago_con_el_may.jpg');
-		background-size: 115%;
+		bottom: 130px;
+		background-size: 123% 100%;
+
 
 }
 
 figure:nth-of-type(6) {
 		background-image: url('finca_ver.jpg');
+		bottom: 130px;
 
 }
 
@@ -239,3 +246,16 @@ figure:nth-of-type(6) {
     color: ghostwhite;
     margin: 0;
 }
+
+
+@media (max-width: 600px) {
+	.base {
+	display: flex;
+	flex-flow: column wrap;
+	height: 100%;
+	margin: 0;
+	background-image: url('photoBack_mobile.jpg');
+	background-size: 108% 95%;
+}
+}
+
