@@ -260,6 +260,19 @@ figure:nth-of-type(6) {
 
 }
 
+.nav_a {
+	font-size: 19px;
+}
+
+.fa-brands {
+	font-size: 27px;
+	margin-right: 25px;
+}
+
+.footer_a {
+	align-self: center;
+}
+
 
 /*Gallery*/
 
