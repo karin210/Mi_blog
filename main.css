@@ -253,9 +253,6 @@ figure:nth-of-type(7) {
  z-index: -1;
 }
 
-#story1_p {
-
-}
 
 /*Articles*/
 
@@ -265,6 +262,7 @@ figure:nth-of-type(7) {
     width: 450px;
     height: 240px;
     border-radius: 9px;
+    margin: 16px 0;
     margin-right: 75px;
 }
 
@@ -272,6 +270,20 @@ figure:nth-of-type(7) {
 	font-size: 4rem;
     color: ghostwhite;
     margin: 0;
+}
+
+.article_p-modal {
+ display: none;
+ font-size: 40px;
+ background-color: rgba(30, 58, 94, 97%);
+ color: ghostwhite;
+ position: absolute;
+ height: auto;
+ width: 100%;
+ margin: 0;
+ top: 132px;
+ left: 0;
+ z-index: -1;
 }
 
 /*media queries*/
@@ -466,5 +478,14 @@ figure:nth-of-type(7) {
 	.article_h {
 		font-size: 2rem;
 		text-align: center;
+	}
+
+	.article_p-modal {
+		font-size: 17px;
+		width: 90%;
+		height: auto;
+		top: 136px;
+		padding: 4% 5%;
+
 	}
 }
