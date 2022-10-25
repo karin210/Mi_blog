@@ -242,7 +242,7 @@ figure:nth-of-type(6) {
     margin-right: 75px;
 }
 
-.article_p_h {
+.article_h {
 	font-size: 4rem;
     color: ghostwhite;
     margin: 0;
@@ -396,7 +396,7 @@ text-align: center;
 
 .story_h {
 	font-size: 2rem;
-text-align: center;
+	text-align: center;
 }
 
 .story_p-modal {
@@ -405,5 +405,24 @@ text-align: center;
 	height: 101%;
 	top: 120px;
 	padding: 7px 32px;
+}
+
+/*Articles*/
+
+.main_articles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 73%;
+	height: 244px;
+	margin-top: 16px;
+	margin-bottom: 10px;
+	margin-right: 0;
+	padding: 0;	
+}
+
+.article_h {
+	font-size: 2rem;
+	text-align: center;
 }
 }
