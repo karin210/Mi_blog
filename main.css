@@ -261,6 +261,7 @@ figure:nth-of-type(6) {
 
 .nav_a {
 	font-size: 19px;
+	padding-right: 23px;
 }
 
 .fa-brands {
@@ -375,7 +376,7 @@ figure:nth-of-type(6) {
 	font-size: 17px;
 	width: 90%;
 	height: 101%;
-	top: 120px;
+	top: 160px;
 	padding: 4% 5%;
 }
 
@@ -407,7 +408,7 @@ text-align: center;
 	font-size: 17px;
 	width: 90%;
 	height: auto;
-	top: 120px;
+	top: 160px;
 	padding: 4% 5%;
 
 }
