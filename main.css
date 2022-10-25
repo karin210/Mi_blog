@@ -50,6 +50,14 @@
 
 /*Gallery*/
 
+.base_pages {
+	margin: 0;
+}
+
+#backImg {
+	display: none;
+}
+
 .pages_header {
 	position: sticky;
 	top: 0;
@@ -61,11 +69,15 @@
 
 .pages_h1 {
 	color: ghostwhite;
-
+	margin-top: 0;
 }
 
 .pages_nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: end;
 	align-self: center;
+
 
 }
 
@@ -246,10 +258,15 @@ figure:nth-of-type(6) {
     margin: 0;
 }
 
-
+/*media queries*/
 /*Landing page*/
 
 @media (max-width: 600px) {
+
+	#backImgFull {
+		display: none;
+	}
+
 	.base {
 	display: flex;
 	flex-flow: column wrap;
@@ -257,178 +274,179 @@ figure:nth-of-type(6) {
 	height: auto;
 	margin: 0;
 
-}
+	}
 
-.nav_a {
-	font-size: 19px;
-	padding-right: 23px;
-}
+	.nav_a {
+		font-size: 19px;
+		padding-right: 23px;
+	}
 
-.fa-brands {
-	font-size: 27px;
-	margin-right: 25px;
-}
+	.fa-brands {
+		font-size: 27px;
+		margin-right: 25px;
+	}
 
-.footer_a {
-	align-self: center;
-}
-
-
-/*Gallery*/
-
-.base_pages {
-	display: flex;
-	flex-flow: column wrap;
-	height: auto;
-	margin: 0;
-}
-
-.pages_header {
-	height: auto;
-}
-
-.pages_nav {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-.pages_nav_a {
-	font-size: 16px;
-	padding: 11px;
-}
-
-#backImg {
-	width: 107%;
-    height: 100%;
-    position: fixed;
-    top: 77px;
-    z-index: -1;
-}
-
-.pages_h1 {
-	margin-left: 5%
-}
-
-.pages_main {
-	flex-flow: column wrap;
-	margin-top: 20px;
-    align-content: center;
-    height: auto;
-    margin: 0;
-}
-
-.pages_main_picts {
-	background-size: 101% 114%;
-	margin-right: 0;
-	margin-left: 0;
-	width: 73%;
-	height: 244px;
-
-}
-
-.picts_txt {
-	height: 100%;
-	font-size: 17px;
-	top: -9%
-}
+	.footer_a {
+		align-self: center;
+	}
 
 
+	/*Gallery*/
+
+	#backImg {
+		display: block;
+		width: 107%;
+	    height: 100%;
+	    position: fixed;
+	    top: 77px;
+	    z-index: -1;
+	}
+	.base_pages {
+		display: flex;
+		flex-flow: column wrap;
+		height: auto;
+		margin: 0;
+	}
+
+	.pages_header {
+		height: auto;
+	}
+
+	.pages_nav {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.pages_nav_a {
+		font-size: 16px;
+		padding: 11px;
+	}
 
 
-figure:nth-of-type(4) {
-		background-image: url('acuario.jpg');
-		bottom: 0;
+	.pages_h1 {
+		margin-left: 5%
+	}
 
-}
+	.pages_main {
+		flex-flow: column wrap;
+		margin-top: 20px;
+	    align-content: center;
+	    height: auto;
+	    margin: 0;
+	}
 
-figure:nth-of-type(5) {
-		background-image: url('el_lago_con_el_may.jpg');
-		bottom: 0;
-		background-size: 100% 100%;
+	.pages_main_picts {
+		background-size: 101% 114%;
+		margin-right: 0;
+		margin-left: 0;
+		width: 73%;
+		height: 244px;
 
+	}
 
-}
-
-figure:nth-of-type(6) {
-		background-image: url('finca_ver.jpg');
-		bottom: 0;
-
-}
+	.picts_txt {
+		height: 100%;
+		font-size: 17px;
+		top: -9%
+	}
 
 
 
-/*Philosophy*/
 
-.main_ideas {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 73%;
-	height: 244px;
-	margin-top: 16px;
-	margin-bottom: 10px;
-	margin-right: 0;
-	padding: 0;
+	figure:nth-of-type(4) {
+			background-image: url('acuario.jpg');
+			bottom: 0;
 
-}
+	}
 
-.phil_p-modal {
-	font-size: 17px;
-	width: 90%;
-	height: 101%;
-	top: 160px;
-	padding: 4% 5%;
-}
+	figure:nth-of-type(5) {
+			background-image: url('el_lago_con_el_may.jpg');
+			bottom: 0;
+			background-size: 100% 100%;
 
-.phil_h {
-font-size: 2rem;
-text-align: center;
-}
 
-/*Stories*/
+	}
 
-.main_stories {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 73%;
-	height: 244px;
-	margin-top: 16px;
-	margin-bottom: 10px;
-	margin-right: 0;
-	padding: 0;
-}
+	figure:nth-of-type(6) {
+			background-image: url('finca_ver.jpg');
+			bottom: 0;
 
-.story_h {
+	}
+
+
+
+	/*Philosophy*/
+
+	.main_ideas {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 73%;
+		height: 244px;
+		margin-top: 16px;
+		margin-bottom: 10px;
+		margin-right: 0;
+		padding: 0;
+
+	}
+
+	.phil_p-modal {
+		font-size: 17px;
+		width: 90%;
+		height: 101%;
+		top: 160px;
+		padding: 4% 5%;
+	}
+
+	.phil_h {
 	font-size: 2rem;
 	text-align: center;
-}
+	}
 
-.story_p-modal {
-	font-size: 17px;
-	width: 90%;
-	height: auto;
-	top: 160px;
-	padding: 4% 5%;
+	/*Stories*/
 
-}
+	.main_stories {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 73%;
+		height: 244px;
+		margin-top: 16px;
+		margin-bottom: 10px;
+		margin-right: 0;
+		padding: 0;
+	}
 
-/*Articles*/
+	.story_h {
+		font-size: 2rem;
+		text-align: center;
+	}
 
-.main_articles {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 73%;
-	height: 244px;
-	margin-top: 16px;
-	margin-bottom: 10px;
-	margin-right: 0;
-	padding: 0;	
-}
+	.story_p-modal {
+		font-size: 17px;
+		width: 90%;
+		height: auto;
+		top: 160px;
+		padding: 4% 5%;
 
-.article_h {
-	font-size: 2rem;
-	text-align: center;
-}
+	}
+
+	/*Articles*/
+
+	.main_articles {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 73%;
+		height: 244px;
+		margin-top: 16px;
+		margin-bottom: 10px;
+		margin-right: 0;
+		padding: 0;	
+	}
+
+	.article_h {
+		font-size: 2rem;
+		text-align: center;
+	}
 }
