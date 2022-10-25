@@ -217,17 +217,15 @@ figure:nth-of-type(6) {
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
+ height: auto;
  width: 100%;
- height: 97%;
  margin: 0;
  top: 80px;
  left: 0;
  z-index: -1;
- overflow: scroll;
 }
 
 #story1_p {
- height: 116%;
 
 }
 
@@ -369,10 +367,10 @@ figure:nth-of-type(6) {
 
 .phil_p-modal {
 	font-size: 17px;
-	width: 88%;
+	width: 90%;
 	height: 101%;
 	top: 120px;
-	padding: 7px 32px;
+	padding: 4% 5%;
 }
 
 .phil_h {
@@ -401,10 +399,11 @@ text-align: center;
 
 .story_p-modal {
 	font-size: 17px;
-	width: 88%;
-	height: 101%;
+	width: 90%;
+	height: auto;
 	top: 120px;
-	padding: 7px 32px;
+	padding: 4% 5%;
+
 }
 
 /*Articles*/
