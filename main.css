@@ -51,7 +51,6 @@
 /*Gallery*/
 
 .pages_header {
-	display: flex;
 	position: sticky;
 	top: 0;
 	z-index: 2;
@@ -295,6 +294,10 @@ figure:nth-of-type(6) {
     z-index: -1;
 }
 
+.pages_h1 {
+	margin-left: 5%
+}
+
 .pages_main {
 	flex-flow: column wrap;
 	margin-top: 20px;
@@ -304,7 +307,7 @@ figure:nth-of-type(6) {
 }
 
 .pages_main_picts {
-	background-size: 105%;
+	background-size: 101% 114%;
 	margin-right: 0;
 	margin-left: 0;
 	width: 73%;
@@ -314,6 +317,8 @@ figure:nth-of-type(6) {
 
 .picts_txt {
 	height: 100%;
+	font-size: 17px;
+	top: -9%
 }
 
 
@@ -328,7 +333,7 @@ figure:nth-of-type(4) {
 figure:nth-of-type(5) {
 		background-image: url('el_lago_con_el_may.jpg');
 		bottom: 0;
-		background-size: 123% 100%;
+		background-size: 100% 100%;
 
 
 }
