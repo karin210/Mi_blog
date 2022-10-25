@@ -6,6 +6,14 @@ const idea2 = document.querySelector('#idea2');
 const modal2 = document.querySelector('#idea2_p');
 const idea3 = document.querySelector('#idea3');
 const modal3 = document.querySelector('#idea3_p');
+const idea4 = document.querySelector('#idea4');
+const modal4 = document.querySelector('#idea4_p');
+const idea5 = document.querySelector('#idea5');
+const modal5 = document.querySelector('#idea5_p');
+const idea6 = document.querySelector('#idea6');
+const modal6 = document.querySelector('#idea6_p');
+const idea7 = document.querySelector('#idea7');
+const modal7 = document.querySelector('#idea7_p');
 
 
 
@@ -22,6 +30,22 @@ main.addEventListener('click', function(e) {
 			modal3.style.display= 'block';
 			modal3.style.zIndex= '1';
 		}
+		else if(e.target.id.includes('idea4')) {
+			modal4.style.display= 'block';
+			modal4.style.zIndex= '1';
+		}
+		else if(e.target.id.includes('idea5')) {
+			modal5.style.display= 'block';
+			modal5.style.zIndex= '1';
+		}
+		else if(e.target.id.includes('idea6')) {
+			modal6.style.display= 'block';
+			modal6.style.zIndex= '1';
+		}
+		else if(e.target.id.includes('idea7')) {
+			modal7.style.display= 'block';
+			modal7.style.zIndex= '1';
+		}
 })
 
 main.addEventListener('click', function(e) {
@@ -33,6 +57,18 @@ main.addEventListener('click', function(e) {
 	}
 	else if(e.target.id.includes('idea3_p')) {
 		modal3.style.display= 'none';
+	}
+	else if(e.target.id.includes('idea4_p')) {
+		modal4.style.display= 'none';
+	}
+	else if(e.target.id.includes('idea5_p')) {
+		modal5.style.display= 'none';
+	}
+	else if(e.target.id.includes('idea6_p')) {
+		modal6.style.display= 'none';
+	}
+	else if(e.target.id.includes('idea7_p')) {
+		modal7.style.display= 'none';
 	}
 })
 

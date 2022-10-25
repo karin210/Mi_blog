@@ -50,13 +50,24 @@
 
 /*Gallery*/
 
-.base_pages {
-	margin: 0;
-}
-
 #backImg {
 	display: none;
+
 }
+
+#backImgFull {
+	position: fixed;
+	top: 116px;
+	width: 100%;
+	height: 88%;
+	z-index: -1;
+}
+
+.base_pages {
+	margin: 0;
+	height: auto;
+}
+
 
 .pages_header {
 	position: sticky;
@@ -70,6 +81,8 @@
 .pages_h1 {
 	color: ghostwhite;
 	margin-top: 0;
+	padding-top: 15px;
+	padding-left: 12px;
 }
 
 .pages_nav {
@@ -91,25 +104,23 @@
 
 .pages_main {
 	 display: flex;
-	 height: 1085px;
+	 height: auto;
     flex-flow: row wrap;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
 }
 
 .pages_main_picts {
-	width: 29%;
-    height: 33%;
-	border-radius: 9px;
-	border: 5px solid;
+	width: 28%;
+    height: 360px;
+	border-radius: 3px;
+	border: 1px solid;
 	position: relative;
-	background-size: 100%;
+	background-size: 104% 109%;
 	background-repeat: no-repeat;
 	margin-right: -1%;
 }
 
-#pict5 {
-}
 
 figure:nth-of-type(1) {
 		background-image: url('brightDay.jpg');
@@ -128,13 +139,11 @@ figure:nth-of-type(3) {
 
 figure:nth-of-type(4) {
 		background-image: url('acuario.jpg');
-		bottom: 130px;
 
 }
 
 figure:nth-of-type(5) {
 		background-image: url('el_lago_con_el_may.jpg');
-		bottom: 130px;
 		background-size: 123% 100%;
 
 
@@ -142,23 +151,28 @@ figure:nth-of-type(5) {
 
 figure:nth-of-type(6) {
 		background-image: url('finca_ver.jpg');
-		bottom: 130px;
 
 }
+
+figure:nth-of-type(7) {
+		background-image: url('pichancha.jpg');
+}
+
 
 
 .picts_txt {
 	display: block;
 	background: transparent;
 	color: transparent;
-	height: 100%;
-	width: 100%;
+	height: 94%;
+	width: 96%;
 	border: 5px solid white;
 	border-radius: 9px;
-    font-size: 30px;
+    font-size: 26px;
     position: relative;
-	top: -35px;
+	top: -31px;
     left: -5px;
+    padding: 10px;
 }
 
 .picts_txt:hover {
@@ -184,6 +198,7 @@ figure:nth-of-type(6) {
     width: 450px;
     height: 240px;
     border-radius: 9px;
+    margin: 16px 0;
     margin-right: 75px;
 }
 
@@ -200,9 +215,9 @@ figure:nth-of-type(6) {
  color: ghostwhite;
  position: absolute;
  width: 100%;
- height: 97%;
+ height: 147%;
  margin: 0;
- top: 80px;
+ top: 132px;
  left: 0;
  z-index: -1;
 }
@@ -324,7 +339,7 @@ figure:nth-of-type(6) {
 
 
 	.pages_h1 {
-		margin-left: 5%
+		font-size: 23px;
 	}
 
 	.pages_main {
@@ -345,9 +360,11 @@ figure:nth-of-type(6) {
 	}
 
 	.picts_txt {
-		height: 100%;
+		height: 91%;
+		width: 90%;
 		font-size: 17px;
 		top: -9%
+
 	}
 
 
@@ -393,8 +410,8 @@ figure:nth-of-type(6) {
 	.phil_p-modal {
 		font-size: 17px;
 		width: 90%;
-		height: 101%;
-		top: 160px;
+		height: 204%;
+		top: 136px;
 		padding: 4% 5%;
 	}
 
@@ -426,7 +443,7 @@ figure:nth-of-type(6) {
 		font-size: 17px;
 		width: 90%;
 		height: auto;
-		top: 160px;
+		top: 136px;
 		padding: 4% 5%;
 
 	}
