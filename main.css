@@ -214,11 +214,13 @@ figure:nth-of-type(7) {
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
- width: 100%;
+ width: calc(98% + -3px);
  height: 147%;
  margin: 0;
  top: 132px;
  left: 0;
+ padding: 0 20px;
+ padding-top: 20px;
  z-index: -1;
 }
 
@@ -480,7 +482,7 @@ figure:nth-of-type(7) {
 		text-align: center;
 	}
 
-	.article_p-modal {
+	._p-modal {
 		font-size: 17px;
 		width: 90%;
 		height: auto;
