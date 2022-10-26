@@ -38,6 +38,7 @@
 .fa-brands {
 	font-size: 45px;
 	margin-right: 35px;
+	color: ghostwhite;
 }
 
 #footer {
@@ -248,10 +249,12 @@ figure:nth-of-type(7) {
  color: ghostwhite;
  position: absolute;
  height: auto;
- width: 100%;
+ width: calc(98% + -3px);
  margin: 0;
  top: 132px;
  left: 0;
+ padding: 0 20px;
+ padding-top: 20px;
  z-index: -1;
 }
 
@@ -281,10 +284,12 @@ figure:nth-of-type(7) {
  color: ghostwhite;
  position: absolute;
  height: auto;
- width: 100%;
+ width: calc(98% + -3px);
  margin: 0;
  top: 132px;
  left: 0;
+ padding: 0 20px;
+ padding-top: 20px;
  z-index: -1;
 }
 
