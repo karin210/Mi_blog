@@ -1,10 +1,14 @@
+html {
+	font-family: Open-Sans, sans-serif;
+}
+
 .base {
 	display: flex;
 	flex-flow: column wrap;
 	height: 100%;
 	margin: 0;
-	background-image: url('photoback.jpg');
 	background-size: 100% 96%;
+	background-color: rgba(90, 200, 100, 16%);
 }
 
 .main {
@@ -12,6 +16,12 @@
 	height: 100vh;
 	width: 100vw;
 	justify-content: end;
+}
+
+#main_welcome {
+	font-size: 3.2rem;
+	color: rgba(0, 0, 0, 70%);
+	margin: 40% 10%;
 }
 
 #main_nav {
@@ -22,7 +32,7 @@
 }
 
 .nav_a {
-	color: white;
+	color: rgba(0, 0, 0, 70%);
 	font-size: 27px;
 	text-align: center;
 	text-decoration: none;
@@ -47,6 +57,10 @@
 	background-color: black;
 	height: 59px;
 	align-content: center;
+}
+
+.footer_a:visited {
+	color: ghostwhite;
 }
 
 /*Gallery*/
