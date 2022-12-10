@@ -83,6 +83,7 @@ html {
 .base_pages {
 	margin: 0;
 	height: auto;
+	background-color: #90C9E4;
 }
 
 
@@ -90,13 +91,13 @@ html {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-	background-color: black;
+	background-color: #065072;
+	color:  rgba(255, 255, 255, 70%);
 	justify-content: space-around;
 
 }
 
 .pages_h1 {
-	color: ghostwhite;
 	margin-top: 0;
 	padding-top: 15px;
 	padding-left: 12px;
@@ -201,7 +202,7 @@ figure:nth-of-type(7) {
 #footerGal {
     display: flex;
 	justify-content: center;
-	background-color: black;
+	background-color: #065072;
 	height: 59px;
 }
 
@@ -328,17 +329,23 @@ figure:nth-of-type(7) {
 
 	#main_welcome {
 	font-size: 1rem;
-	margin-top: 100%;
+	margin-top: 330px;
+
 }
 
+	#main_nav {
+		width: ;
+	}
+
 	.nav_a {
-		font-size: 10px;
+		font-size: 11px;
 		padding-right: 23px;
 	}
 
 	.fa-brands {
-		font-size: 27px;
+		font-size: 20px;
 		margin-right: 25px;
+
 	}
 
 	.footer_a {
