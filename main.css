@@ -171,6 +171,7 @@ height: 2px;
     height: 360px;
 	border-radius: 3px;
 	border: 1px solid;
+;
 	position: relative;
 	background-size: 104% 109%;
 	background-repeat: no-repeat;
@@ -222,7 +223,8 @@ figure:nth-of-type(7) {
 	color: transparent;
 	height: 94%;
 	width: 96%;
-	border: 5px solid white;
+	border: 5px solid rgba(240, 160, 60, 100%);
+;
 	border-radius: 9px;
     font-size: 14px;
     position: relative;
@@ -460,10 +462,10 @@ figure:nth-of-type(7) {
 	}
 
 	.picts_txt {
-		height: 91%;
-		width: 90%;
-		font-size: 14px;
-		top: -9%
+		height: 92%;
+	    width: 92%;
+	    font-size: 14px;
+	    top: -8%;
 
 	}
 

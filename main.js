@@ -1,3 +1,5 @@
+
+
 //Philosophy page
 const main = document.querySelector('.pages_main');
 const idea1 = document.querySelector('#idea1');
