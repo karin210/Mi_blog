@@ -52,14 +52,13 @@ html {
 }
 .nav_a:hover::after{
 margin-left: 10px;
-background-color: red;
+background-color: rgba(240, 160, 60, 100%);
 width: 35px;
 height: 2px;
 }
 
 #a_phil:hover::after{
 margin-left: 0px;
-background-color: red;
 width: 53px;
 height: 2px;
 }
