@@ -141,7 +141,6 @@ height: 2px;
 	width: 0px;
 	height: 0px;
 	display: block;
-	background-color: black;
 	transition: 0.5s;
 }
 
@@ -225,11 +224,12 @@ figure:nth-of-type(7) {
 	width: 96%;
 	border: 5px solid white;
 	border-radius: 9px;
-    font-size: 26px;
+    font-size: 14px;
     position: relative;
 	top: -31px;
     left: -5px;
     padding: 10px;
+    line-height: 26px;
 }
 
 .picts_txt:hover {
@@ -416,12 +416,26 @@ figure:nth-of-type(7) {
 	.pages_nav {
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: start;
 	}
 
 	.pages_nav_a {
-		font-size: 16px;
+		font-size: 12px;
 		padding: 11px;
 	}
+
+	.pages_nav_a:hover::after {
+	width: 38px;
+	height: 2px;
+}
+
+#pages_a_home:hover::after {
+	width: 33px;
+}
+
+#pages_a_phil:hover::after {
+	width: 60px;
+}
 
 
 	.pages_h1 {
@@ -448,7 +462,7 @@ figure:nth-of-type(7) {
 	.picts_txt {
 		height: 91%;
 		width: 90%;
-		font-size: 17px;
+		font-size: 14px;
 		top: -9%
 
 	}
