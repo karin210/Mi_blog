@@ -72,7 +72,7 @@ height: 2px;
 #footer {
 	display: flex;
 	justify-content: center;
-	background-color: #065072;
+	background-color: rgba(240, 160, 60, 100%);
 	height: 59px;
 	align-content: center;
 }
@@ -238,10 +238,10 @@ figure:nth-of-type(7) {
 
 }
 
-#footerGal {
+.pages_footer {
     display: flex;
 	justify-content: center;
-	background-color: #065072;
+	background-color: rgba(240, 160, 60, 100%);
 	height: 59px;
 }
 
