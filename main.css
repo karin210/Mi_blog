@@ -136,8 +136,27 @@ height: 2px;
 	font-size: 27px;
 }
 
-.pages_nav_a:hover {
-	background-color: rgba(240, 160, 60, 100%);
+.pages_nav_a::after {
+	content: '';
+	width: 0px;
+	height: 0px;
+	display: block;
+	background-color: black;
+	transition: 0.5s;
+}
+
+.pages_nav_a:hover::after {
+background-color: rgba(240, 160, 60, 100%);
+width: 50px;
+height: 2px;
+}
+
+#pages_a_home:hover::after {
+	width: 42px;
+}
+
+#pages_a_phil:hover::after {
+	width: 75px;
 }
 
 .pages_main {
