@@ -8,7 +8,7 @@ html {
 	height: 100%;
 	margin: 0;
 	background-size: 100% 96%;
-	background-color: #90C9E4;
+	background-color: rgba(252, 252, 252, 100%);
 }
 
 .main {
@@ -42,10 +42,27 @@ html {
 	padding-right: 55px;
 }
 
-.nav_a:hover {
-	background-color: rgba(255, 255, 255, 70%);
+.nav_a::after {
+	content: '';
+	width: 0px;
+	height: 0px;
+	display: block;
+	background-color: black;
+	transition: 0.5s;
+}
+.nav_a:hover::after{
+margin-left: 10px;
+background-color: red;
+width: 35px;
+height: 2px;
 }
 
+#a_phil:hover::after{
+margin-left: 0px;
+background-color: red;
+width: 53px;
+height: 2px;
+}
 .fa-brands {
 	font-size: 30px;
 	margin-top: 20%;
@@ -83,7 +100,7 @@ html {
 .base_pages {
 	margin: 0;
 	height: auto;
-	background-color: #90C9E4;
+	background-color: #FCFCFC;
 }
 
 
@@ -91,8 +108,8 @@ html {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-	background-color: #065072;
-	color:  rgba(255, 255, 255, 70%);
+	background-color: rgba(240, 240, 240, 100%);
+	color:  rgba(240, 160, 60, 100%);
 	justify-content: space-around;
 
 }
@@ -116,8 +133,12 @@ html {
 	text-decoration: none;
 	padding: 14px;
 	border-radius: 6px;
-	color: ghostwhite;
+	color: rgba(0, 0, 0, 80%);
 	font-size: 27px;
+}
+
+.pages_nav_a:hover {
+	background-color: rgba(240, 160, 60, 100%);
 }
 
 .pages_main {
