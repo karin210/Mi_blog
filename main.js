@@ -16,6 +16,23 @@ const idea7 = document.querySelector('#idea7');
 const modal7 = document.querySelector('#idea7_modal');
 const body = document.querySelector('.base');
 
+main.addEventListener('click', open); 
+
+function open(e) {
+	//store the id of the target element
+	let ideaId = e.target.id;
+	//complete the id of the modal element with the target element
+	let modal = document.querySelector('#' + ideaId + '' + '_modal');
+	modal.style.display='block';
+	modal.style.zIndex= '1';
+	
+	
+
+
+}
+
+//Old open modals way
+/*
 //open modal
 main.addEventListener('click', function(e) {
 
@@ -95,8 +112,19 @@ main.addEventListener('click', function(e) {
 		modal7.style.display= 'none';
 		body.style.overflow = 'initial';
 	}
-})
+})*/
 
+
+/*
+!Bugs:
+	1. You shouldn't be able to click on another philisophy's idea if a modal is open.
+*/
+
+
+/*
+	Stories:
+	OnClick on a idea it should automatically throw it's modal
+*/
 
 //Stories page
 const story1 = document.querySelector('#story1');
