@@ -1,78 +1,88 @@
-
-
 //Philosophy page
 const main = document.querySelector('.pages_main');
 const idea1 = document.querySelector('#idea1');
-const modal1 = document.querySelector('#idea1_p');
+const modal1 = document.querySelector('#idea1_modal');
 const idea2 = document.querySelector('#idea2');
-const modal2 = document.querySelector('#idea2_p');
+const modal2 = document.querySelector('#idea2_modal');
 const idea3 = document.querySelector('#idea3');
-const modal3 = document.querySelector('#idea3_p');
+const modal3 = document.querySelector('#idea3_modal');
 const idea4 = document.querySelector('#idea4');
-const modal4 = document.querySelector('#idea4_p');
+const modal4 = document.querySelector('#idea4_modal');
 const idea5 = document.querySelector('#idea5');
-const modal5 = document.querySelector('#idea5_p');
+const modal5 = document.querySelector('#idea5_modal');
 const idea6 = document.querySelector('#idea6');
-const modal6 = document.querySelector('#idea6_p');
+const modal6 = document.querySelector('#idea6_modal');
 const idea7 = document.querySelector('#idea7');
-const modal7 = document.querySelector('#idea7_p');
+const modal7 = document.querySelector('#idea7_modal');
+const body = document.querySelector('.base');
 
-
-
+//open modal
 main.addEventListener('click', function(e) {
-		if(e.target.id.includes('idea1')) {
-			modal1.style.display= 'block';
-			modal1.style.zIndex= '1';
-		}
-		else if(e.target.id.includes('idea2')) {
-			modal2.style.display= 'block';
-			modal2.style.zIndex= '1';
-		}
-		else if(e.target.id.includes('idea3')) {
-			modal3.style.display= 'block';
-			modal3.style.zIndex= '1';
-		}
-		else if(e.target.id.includes('idea4')) {
-			modal4.style.display= 'block';
-			modal4.style.zIndex= '1';
-		}
-		else if(e.target.id.includes('idea5')) {
-			modal5.style.display= 'block';
-			modal5.style.zIndex= '1';
-		}
-		else if(e.target.id.includes('idea6')) {
-			modal6.style.display= 'block';
-			modal6.style.zIndex= '1';
-		}
-		else if(e.target.id.includes('idea7')) {
-			modal7.style.display= 'block';
-			modal7.style.zIndex= '1';
-		}
-})
 
-main.addEventListener('click', function(e) {
-	if(e.target.id.includes('idea1_p')) {
-		modal1.style.display= 'none';
+	if(e.target.id.includes('idea1')) {
+		modal1.style.display= 'block';
+		modal1.style.zIndex= '1';
+		body.style.overflow = 'hidden';
+		
+
 	}
-	else if(e.target.id.includes('idea2_p')) {
+
+	else if(e.target.id.includes('idea2')) {
+		modal2.style.display= 'block';
+		modal2.style.zIndex= '1';
+	}
+
+	else if(e.target.id.includes('idea3')) {
+		modal3.style.display= 'block';
+		modal3.style.zIndex= '1';
+	}
+	else if(e.target.id.includes('idea4')) {
+		modal4.style.display= 'block';
+		modal4.style.zIndex= '1';
+	}
+	else if(e.target.id.includes('idea5')) {
+		modal5.style.display= 'block';
+		modal5.style.zIndex= '1';
+	}
+	else if(e.target.id.includes('idea6')) {
+		modal6.style.display= 'block';
+		modal6.style.zIndex= '1';
+	}
+	else if(e.target.id.includes('idea7')) {
+		modal7.style.display= 'block';
+		modal7.style.zIndex= '1';
+	}
+
+});
+
+//close modal
+main.addEventListener('click', function(e) {
+	if(e.target.id.includes('idea1_modal')) {
+		modal1.style.display= 'none';
+		body.style.overflow = 'initial';
+
+	}
+	
+	else if(e.target.id.includes('idea2_modal')) {
 		modal2.style.display= 'none';
 	}
-	else if(e.target.id.includes('idea3_p')) {
+	else if(e.target.id.includes('idea3_modal')) {
 		modal3.style.display= 'none';
 	}
-	else if(e.target.id.includes('idea4_p')) {
+	else if(e.target.id.includes('idea4_modal')) {
 		modal4.style.display= 'none';
 	}
-	else if(e.target.id.includes('idea5_p')) {
+	else if(e.target.id.includes('idea5_modal')) {
 		modal5.style.display= 'none';
 	}
-	else if(e.target.id.includes('idea6_p')) {
+	else if(e.target.id.includes('idea6_modal')) {
 		modal6.style.display= 'none';
 	}
-	else if(e.target.id.includes('idea7_p')) {
+	else if(e.target.id.includes('idea7_modal')) {
 		modal7.style.display= 'none';
 	}
 })
+
 
 //Stories page
 const story1 = document.querySelector('#story1');

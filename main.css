@@ -252,13 +252,15 @@ figure:nth-of-type(7) {
 /*Philosophy*/
 
 .main_ideas {
-	background-color: black;
+	background-color: rgba(0, 0, 0, 90%);
 	padding: 29px;
     width: 450px;
     height: 240px;
     border-radius: 9px;
     margin: 16px 0;
     margin-right: 75px;
+    cursor: pointer;
+
 }
 
 .phil_h {
@@ -274,14 +276,28 @@ figure:nth-of-type(7) {
  color: ghostwhite;
  position: absolute;
  width: calc(98% + -3px);
- height: 147%;
  margin: 0;
  top: 132px;
  left: 0;
  padding: 0 20px;
  padding-top: 20px;
  z-index: -1;
+ cursor: default;
+ line-height: 26px;
+ pointer-events: none;
+
 }
+
+.phil_p-modal::before {
+	content: 'X';
+	display: block;
+	text-align: end;
+	font-weight: bolder;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+
 
 /*Stories*/
 .main_stories {
@@ -511,10 +527,14 @@ figure:nth-of-type(7) {
 
 	.phil_p-modal {
 		font-size: 17px;
-		width: 90%;
-		height: 204%;
-		top: 136px;
-		padding: 4% 5%;
+		width: 82%;
+		min-height: 100%;
+		top: 92px;
+		padding: 4% 9%;
+	}
+
+	.phil_p-modal::before{
+		margin-right: -14px;
 	}
 
 	.phil_h {
@@ -577,4 +597,5 @@ figure:nth-of-type(7) {
 		padding: 4% 5%;
 
 	}
+
 }
