@@ -285,7 +285,6 @@ figure:nth-of-type(7) {
  cursor: default;
  line-height: 26px;
  pointer-events: none;
-
 }
 
 .phil_p-modal::before {

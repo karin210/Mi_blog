@@ -17,114 +17,29 @@ const modal7 = document.querySelector('#idea7_modal');
 const body = document.querySelector('.base');
 
 main.addEventListener('click', open); 
-
 function open(e) {
-	//store the id of the target element
-	let ideaId = e.target.id;
-	//complete the id of the modal element with the target element
-	let modal = document.querySelector('#' + ideaId + '' + '_modal');
-	modal.style.display='block';
-	modal.style.zIndex= '1';
-	
-	
+	if(e.target.classList.contains('main_ideas')) {
+		const modalId = e.target.id + '' + '_modal';
+		const getModal = document.querySelector('#' + modalId);
+		getModal.style.display= 'block';
+		getModal.style.zIndex= '1';
+		body.style.overflow= 'hidden';
+	} else if(e.target.classList.contains('phil_p-modal')) {
+		const modalId = e.target.id;
+		const getModal = document.querySelector('#' + modalId);
+		getModal.style.display= 'none';
+		body.style.overflow= 'initial';
 
+	}
 
 }
-
-//Old open modals way
-/*
-//open modal
-main.addEventListener('click', function(e) {
-
-	if(e.target.id.includes('idea1')) {
-		modal1.style.display= 'block';
-		modal1.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-
-	}
-
-	else if(e.target.id.includes('idea2')) {
-		modal2.style.display= 'block';
-		modal2.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-
-	}
-
-	else if(e.target.id.includes('idea3')) {
-		modal3.style.display= 'block';
-		modal3.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-
-	}
-	else if(e.target.id.includes('idea4')) {
-		modal4.style.display= 'block';
-		modal4.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-	}
-	else if(e.target.id.includes('idea5')) {
-		modal5.style.display= 'block';
-		modal5.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-	}
-	else if(e.target.id.includes('idea6')) {
-		modal6.style.display= 'block';
-		modal6.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-	}
-	else if(e.target.id.includes('idea7')) {
-		modal7.style.display= 'block';
-		modal7.style.zIndex= '1';
-		body.style.overflow = 'hidden';
-	}
-
-});
-
-//close modal
-main.addEventListener('click', function(e) {
-	if(e.target.id.includes('idea1_modal')) {
-		modal1.style.display= 'none';
-		body.style.overflow = 'initial';
-
-	}
-	
-	else if(e.target.id.includes('idea2_modal')) {
-		modal2.style.display= 'none';
-		body.style.overflow = 'initial';
-
-	}
-	else if(e.target.id.includes('idea3_modal')) {
-		modal3.style.display= 'none';
-		body.style.overflow = 'initial';
-	}
-	else if(e.target.id.includes('idea4_modal')) {
-		modal4.style.display= 'none';
-		body.style.overflow = 'initial';
-	}
-	else if(e.target.id.includes('idea5_modal')) {
-		modal5.style.display= 'none';
-		body.style.overflow = 'initial';
-	}
-	else if(e.target.id.includes('idea6_modal')) {
-		modal6.style.display= 'none';
-		body.style.overflow = 'initial';
-	}
-	else if(e.target.id.includes('idea7_modal')) {
-		modal7.style.display= 'none';
-		body.style.overflow = 'initial';
-	}
-})*/
-
-
+		
 /*
 !Bugs:
 	1. You shouldn't be able to click on another philisophy's idea if a modal is open.
+	2. When you click on the bottom ideas the modal appears above.
 */
 
-
-/*
-	Stories:
-	OnClick on a idea it should automatically throw it's modal
-*/
 
 //Stories page
 const story1 = document.querySelector('#story1');
