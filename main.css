@@ -528,8 +528,9 @@ figure:nth-of-type(7) {
 		font-size: 17px;
 		width: 82%;
 		min-height: 100%;
-		top: 92px;
+		top: 93px;
 		padding: 4% 9%;
+		position: fixed;
 	}
 
 	.phil_p-modal::before{

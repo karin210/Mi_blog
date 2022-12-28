@@ -18,7 +18,7 @@ const body = document.querySelector('.base');
 
 main.addEventListener('click', open); 
 function open(e) {
-	if(e.target.classList.contains('main_ideas')) {
+	if(e.target.classList.contains('main_ideas') || e.target.classList.contains('phil_h')) {
 		const modalId = e.target.id + '' + '_modal';
 		const getModal = document.querySelector('#' + modalId);
 		getModal.style.display= 'block';
@@ -32,12 +32,14 @@ function open(e) {
 
 	}
 
+
 }
 		
 /*
 !Bugs:
 	1. You shouldn't be able to click on another philisophy's idea if a modal is open.
-	2. When you click on the bottom ideas the modal appears above.
+>>>	2. When you click on the bottom ideas the modal appears above.
+	3. when you click on the idea's title modal doesn't appears.
 */
 
 
