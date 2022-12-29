@@ -21,7 +21,7 @@ html {
 #main_welcome {
 	font-size: 3rem;
 	color: rgba(0, 0, 0, 80%);
-	margin: 40% 10%;
+	margin: 35% 10%;
 	font-weight: light;
 }
 
@@ -51,15 +51,15 @@ html {
 	transition: 0.5s;
 }
 .nav_a:hover::after{
-margin-left: 10px;
+margin-left: 17px;
 background-color: rgba(240, 160, 60, 100%);
-width: 35px;
+width: 100px;
 height: 2px;
 }
 
 #a_phil:hover::after{
-margin-left: 0px;
-width: 53px;
+margin-left: -5px;
+width: 145px;
 height: 2px;
 }
 .fa-brands {
@@ -221,11 +221,11 @@ figure:nth-of-type(7) {
 	background: transparent;
 	color: transparent;
 	height: 95%;
-	width: 96%;
+	width: 97%;
 	border-radius: 3px;
-    font-size: 14px;
+    font-size: 19px;
     position: relative;
-	top: -31px;
+	top: -22px;
     left: -5px;
     padding: 10px;
     border: 3px solid;
@@ -406,6 +406,19 @@ figure:nth-of-type(7) {
 	margin-top: 330px;
 
 }
+
+	.nav_a:hover::after{
+	margin-left: 10px;
+	background-color: rgba(240, 160, 60, 100%);
+	width: 35px;
+	height: 2px;
+	}
+
+	#a_phil:hover::after{
+	margin-left: 0px;
+	width: 53px;
+	height: 2px;
+	}
 
 	#main_nav {
 		width: ;
@@ -627,4 +640,6 @@ figure:nth-of-type(7) {
 /*
 !Bugs:
 	1. Scroll on stories modals the header must keep fixed;
+	2. on mobile, if you touch on a photo, you must touch out of the pic to stop show the text.
+	3. Horizontal view not setted yet.
 */
