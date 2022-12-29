@@ -255,34 +255,39 @@ figure:nth-of-type(7) {
 .main_ideas {
 	background-color: rgba(0, 0, 0, 90%);
 	padding: 29px;
-    width: 450px;
-    height: 240px;
+    width: 350px;
+    height: 200px;
     border-radius: 9px;
     margin: 16px 0;
     margin-right: 75px;
     cursor: pointer;
+    display: flex;
 }
 
 .phil_h {
-	font-size: 4rem;
+	font-size: 2rem;
     color: ghostwhite;
     margin: 0;
+    align-self: center;
+    text-align: center;
+    width: 100%;
 }
 
 .phil_p-modal {
  display: none;
- font-size: 40px;
+ font-size: 25px;
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
- width: calc(98% + -3px);
+ width: calc(91% + 6px);
+ height: 100%;
  margin: 0;
- top: 132px;
+ top: 65px;
  left: 0;
- padding: 0 20px;
+ padding: 0 80px;
  padding-top: 20px;
  cursor: default;
- line-height: 26px;
+ line-height: 40px;
  pointer-events: none;
 }
 
@@ -293,6 +298,7 @@ figure:nth-of-type(7) {
 	font-weight: bolder;
 	cursor: pointer;
 	pointer-events: all;
+	margin-right: -25px;
 }
 
 
@@ -317,18 +323,19 @@ figure:nth-of-type(7) {
 
 .story_p-modal {
  display: none;
- font-size: 40px;
+ font-size: 25px;
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
- width: calc(98% + -3px);
+ width: calc(91% + 6px);
+ min-height: 100%;
  margin: 0;
- top: 132px;
+ top: 65px;
  left: 0;
- padding: 0 20px;
+ padding: 0 80px;
  padding-top: 20px;
  cursor: default;
- line-height: 26px;
+ line-height: 40px;
  pointer-events: none;
 }
 
@@ -339,6 +346,8 @@ figure:nth-of-type(7) {
 	font-weight: bolder;
 	cursor: pointer;
 	pointer-events: all;
+	margin-right: -25px;
+
 }
 
 
@@ -362,19 +371,20 @@ figure:nth-of-type(7) {
 }
 
 .article_p-modal {
-  display: none;
- font-size: 20px;
+ display: none;
+ font-size: 25px;
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
- width: calc(98% + -3px);
+ width: calc(91% + 6px);
+ height: 100%;
  margin: 0;
- top: 132px;
+ top: 65px;
  left: 0;
- padding: 0 20px;
+ padding: 0 80px;
  padding-top: 20px;
  cursor: default;
- line-height: 26px;
+ line-height: 40px;
  pointer-events: none;
 }
 
@@ -468,6 +478,7 @@ figure:nth-of-type(7) {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: start;
+		padding: 0;
 	}
 
 	.pages_nav_a {
@@ -565,7 +576,10 @@ figure:nth-of-type(7) {
 		min-height: 100%;
 		top: 93px;
 		padding: 4% 9%;
+		line-height: 26px;
 		position: fixed;
+		left: 0;
+		margin-right: 0;
 	}
 
 	.phil_p-modal::before{
@@ -599,10 +613,9 @@ figure:nth-of-type(7) {
 	.story_p-modal {
 		font-size: 17px;
 		width: 82%;
-		min-height: 100%;
 		top: 93px;
 		padding: 4% 9%;
-		position: absolute;
+		margin-right: 0;
 
 	}
 
@@ -646,4 +659,7 @@ figure:nth-of-type(7) {
 	1. Scroll on stories modals the header must keep fixed;
 	2. on mobile, if you touch on a photo, you must touch out of the pic to stop show the text.
 	3. Horizontal view not setted yet.
+	4. On desktop mode, the home page shouldn't have scroll horizontally.
+	5. I should use border-box to set the element's size.
+	6. On desktop mode, story's modals shouldn't have scroll horizontally.
 */
