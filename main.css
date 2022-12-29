@@ -260,7 +260,6 @@ figure:nth-of-type(7) {
     margin: 16px 0;
     margin-right: 75px;
     cursor: pointer;
-
 }
 
 .phil_h {
@@ -281,7 +280,6 @@ figure:nth-of-type(7) {
  left: 0;
  padding: 0 20px;
  padding-top: 20px;
- z-index: -1;
  cursor: default;
  line-height: 26px;
  pointer-events: none;
@@ -307,6 +305,7 @@ figure:nth-of-type(7) {
     border-radius: 9px;
     margin: 16px 0;
     margin-right: 75px;
+    cursor: pointer;
 }
 
 .story_h {
@@ -321,14 +320,24 @@ figure:nth-of-type(7) {
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
- height: auto;
  width: calc(98% + -3px);
  margin: 0;
  top: 132px;
  left: 0;
  padding: 0 20px;
  padding-top: 20px;
- z-index: -1;
+ cursor: default;
+ line-height: 26px;
+ pointer-events: none;
+}
+
+.story_p-modal::before {
+	content: 'X';
+	display: block;
+	text-align: end;
+	font-weight: bolder;
+	cursor: pointer;
+	pointer-events: all;
 }
 
 
@@ -342,6 +351,7 @@ figure:nth-of-type(7) {
     border-radius: 9px;
     margin: 16px 0;
     margin-right: 75px;
+    cursor: pointer;
 }
 
 .article_h {
@@ -351,19 +361,29 @@ figure:nth-of-type(7) {
 }
 
 .article_p-modal {
- display: none;
- font-size: 40px;
+  display: none;
+ font-size: 20px;
  background-color: rgba(30, 58, 94, 97%);
  color: ghostwhite;
  position: absolute;
- height: auto;
  width: calc(98% + -3px);
  margin: 0;
  top: 132px;
  left: 0;
  padding: 0 20px;
  padding-top: 20px;
- z-index: -1;
+ cursor: default;
+ line-height: 26px;
+ pointer-events: none;
+}
+
+.article_p-modal::before {
+	content: 'X';
+	display: block;
+	text-align: end;
+	font-weight: bolder;
+	cursor: pointer;
+	pointer-events: all;
 }
 
 /*media queries*/
@@ -563,11 +583,16 @@ figure:nth-of-type(7) {
 
 	.story_p-modal {
 		font-size: 17px;
-		width: 90%;
-		height: auto;
-		top: 136px;
-		padding: 4% 5%;
+		width: 82%;
+		min-height: 100%;
+		top: 93px;
+		padding: 4% 9%;
+		position: absolute;
 
+	}
+
+	.story_p-modal::before{
+		margin-right: -14px;
 	}
 
 	/*Articles*/
@@ -589,13 +614,19 @@ figure:nth-of-type(7) {
 		text-align: center;
 	}
 
-	._p-modal {
+	.article_p-modal {
 		font-size: 17px;
-		width: 90%;
-		height: auto;
-		top: 136px;
-		padding: 4% 5%;
+		width: 82%;
+		min-height: 100%;
+		top: 93px;
+		padding: 4% 9%;
+		position: absolute;
 
 	}
 
 }
+
+/*
+!Bugs:
+	1. Scroll on stories modals the header must keep fixed;
+*/
